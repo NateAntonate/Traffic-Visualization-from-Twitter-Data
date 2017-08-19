@@ -3,10 +3,10 @@
   "description": "Data mining and data analysis of traffic related data from Twitter for (near) real-time traffic visualization on Google maps",
   "main": "server.js",
   "authors": [
-    "SimonMuraya <13arturius91@gmail.com>"
+    ""
   ],
   "license": "ISC",
-  "homepage": "https://github.com/SimonMuraya/Traffic-Visualization-from-Twitter-Data",
+  "homepage": "",
   "private": true,
   "ignore": [
     "**/.*",
@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "firebase": "^1.0.0",
+    "firebase": "^3.6.3",
     "firebaseui": "^1.0.0"
   }
 }

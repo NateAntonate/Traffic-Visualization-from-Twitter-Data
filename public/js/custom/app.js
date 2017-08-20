@@ -13,21 +13,21 @@ var span = document.getElementsByClassName("close")[0];
 var provider = new firebase.auth.GoogleAuthProvider();
 
 // Add login event
-btnLogin.addEventListener('click', () => {
+btnLogin.addEventListener('click', function(){
   // Get email and password
-  firebase.auth().signInWithPopup(provider).then(result => {
+  firebase.auth().signInWithPopup(provider).then(function(result){
     var token = result.credential.accessToken;
 
     var user = result.user;
     setTimeout(function () {
       location.reload()
     }, 3000);
-  }).catch(e => {
+  }).catch(function(e){
     console.log("Error:" + e.code + e.message + e.credential);
   });
 });
 
-firebase.auth().onAuthStateChanged(user => {
+firebase.auth().onAuthStateChanged(function(user){
   if (user) {
     var username = user.displayName.split(" ")[0];
 
@@ -51,7 +51,7 @@ window.onclick = function (event) {
 }
 
 
-btnLogout.addEventListener('click', () => {
+btnLogout.addEventListener('click', function(){
   firebase.auth().signOut().then(function () {
     console.log('logout success');
   }, function (err) {

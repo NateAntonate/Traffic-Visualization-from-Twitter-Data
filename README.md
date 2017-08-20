@@ -7,6 +7,6 @@ To run the project:
  - Make sure you have Node.js and npm installed and clone the project
  - cd to the project dircetory and Run ```npm install``` the dependencies from package.json
  - Run ```bower install``` to install bower dependencies from bower.json
- - Edit ```env.js``` to add twitter and firebase configurations
+ - Edit ```env.config.js``` to add twitter and firebase configurations then rename it to ```env.js```
  - Run ```node server.js```
  - Preview the traffic visualization on http://localhost:4000/

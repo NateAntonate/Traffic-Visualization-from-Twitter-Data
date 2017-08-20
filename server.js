@@ -9,13 +9,13 @@ const moment = require('moment');
 const firebase = require('firebase');
 const roadsObj = require('./config/roads.json');
 
-let Roadarray = [];
-for (let road in roadsObj) {
+var Roadarray = [];
+for (var road in roadsObj) {
   Roadarray.push({ road: road, lat: roadsObj[road].lat, lon: roadsObj[road].lon })
 }
 
 //node server connection
-const server = app.listen(keys.ports.node_port, () => {
+const server = app.listen(keys.ports.node_port, function(){
   console.log('listening on port:' + keys.ports.node_port);
 });
 

@@ -1,9 +1,9 @@
 var Keys = {
   twitterKeys:{
-  consumer_key:  'xxxxxxxxxxxx',
-  consumer_secret: 'xxxxxxxxxx', 
-  access_token_key: 'xxxxxxxxxx',
-  access_token_secret: 'xxxxxxxxx'
+  consumer_key:  "xxxxxxxxxxxx",
+  consumer_secret: "xxxxxxxxxxxx",
+  access_token_key: "xxxxxxxxxxxx",
+  access_token_secret: "xxxxxxxxxxxx"
   },
   firebase:{
     apiKey: "xxxxxxxxxxxx",

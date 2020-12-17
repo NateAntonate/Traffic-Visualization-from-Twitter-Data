@@ -1,0 +1,22 @@
+{
+  "name": "Traffic-Visualization-from-Twitter-Data",
+  "description": "Data mining and data analysis of traffic related data from Twitter for (near) real-time traffic visualization on Google maps",
+  "main": "server.js",
+  "authors": [
+    ""
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "^3.6.3",
+    "firebaseui": "^1.0.0"
+  }
+}

@@ -58,7 +58,7 @@ function initMap() {
 	});
 
 	// Add Updates marker on the map from firebase
-	firebase.database().ref('updates').on('child_added', snapshot => {
+	firebase.database().ref('updates').on('child_added', function(snapshot){
 		var infowindow = new google.maps.InfoWindow();
 		var childData = snapshot.val();
 		var date = +new Date();
@@ -98,7 +98,7 @@ function initMap() {
 	});
 
 	// add tweets marker on the map from firebase
-	firebase.database().ref('tweets').on('child_added', snapshot => {
+	firebase.database().ref('tweets').on('child_added', function(snapshot) {
 		var infowindow = new google.maps.InfoWindow();
 		var childData = snapshot.val();
 		var date = +new Date();
@@ -214,7 +214,7 @@ function initMap() {
 		}
 	});
 
-	btnSubmit.addEventListener('click', e => {
+	btnSubmit.addEventListener('click', function(e){
 		var name = inputRoadName.value;
 		var details = inputDesc.value;
 		var sit = optSituation.value;
